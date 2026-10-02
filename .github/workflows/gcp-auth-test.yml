@@ -12,4 +12,4 @@ jobs:
           workload_identity_provider: ${{ vars.WIF_PROVIDER }}
           service_account: ${{ vars.WIF_SA }}
       - uses: google-github-actions/setup-gcloud@v3
-      - run: gcloud secrets versions access latest --secret=other-secret > /dev/null && echo "Auth OK"
+      - run: gcloud secrets versions access latest --secret=demo-secret > /dev/null && echo "Auth OK"
